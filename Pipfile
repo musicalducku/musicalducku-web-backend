@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "==0.104.1"
+alembic = "~=1.12.1"
+uvicorn = "~=0.24.0"
+sqlalchemy = {version = "~=2.0", extras = ["asyncio"]}
+websockets = "~=12.0"
+
+[dev-packages]
+pytest = "~=7.4.3"
+pytest-cov = "*"
+black = "~=23.11.0"
+mypy = "~=1.7.1"
+ruff = "*"
+pytest-asyncio = "*"
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.0"
