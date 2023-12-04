@@ -12,9 +12,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.12
@@ -35,5 +32,3 @@ jobs:
     - name: Type check with mypy
       run: |
          pipenv run mypy -p chat
-        
-
